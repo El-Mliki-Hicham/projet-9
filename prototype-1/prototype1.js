@@ -28,7 +28,10 @@ for (var i = 0; i < data.length; i++) {
 }
 outputHTML += "</table>"
 
-document.getElementById("divT").innerHTML = outputHTML
+//output
+document.getElementById("div").innerHTML = outputHTML
+
+
 })
 
 
