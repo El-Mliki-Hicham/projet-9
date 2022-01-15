@@ -11,7 +11,8 @@ return reponse.json()
 
 
     outputHTML += "<table>"
-    
+    outputHTML += "<th>Produit</th>"
+    outputHTML += "<th>Prix</th>"
 for (var i = 0; i < data.length; i++) {
    
     outputHTML += "<tr>";
