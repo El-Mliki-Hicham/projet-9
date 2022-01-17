@@ -4,7 +4,7 @@ class Ouvrage{
 
   get id(){
       return this.#_id;
-  }
+  } 
   
   set id(value){
       this.#_id = value;
@@ -17,4 +17,7 @@ class Ouvrage{
   set titre(value){
       this.#_titre = value;
   }
+
+
+  
 }
