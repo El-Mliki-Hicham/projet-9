@@ -2,7 +2,7 @@ class wManager {
 
 weatherNew;
 
-fetchData(url){
+async fetchData(url){
 fetch (url)
     .then(function(reponse) {
 
