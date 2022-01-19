@@ -12,7 +12,7 @@ set meteoNew (value){
 }
 
 
-fetchUrl(url) {
+async fetchUrl(url) {
     var reponse = await fetch(url)
     var data = await reponse.json()
 
@@ -23,6 +23,8 @@ meteo.ville = data.name
 meteo.description = data.weather[0].description
 meteo.wind = data.wind.speed
 meteo.id = data.id
+
+this.#_meteoNew = meteo
 
 
 

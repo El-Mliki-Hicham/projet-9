@@ -4,6 +4,7 @@ class Meteo {
 #_ville
 #_description
 #_wind
+#_id
 
 
 
@@ -30,9 +31,21 @@ return this.#_wind
 }
 
 
-set wind (){
+set wind (value){
     this.#_wind = value
 }
+
+
+get id (){
+    return this.#_id 
+
+}
+
+set id (value){
+
+    this.#_id = value
+}
+
 
 
 }
