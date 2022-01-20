@@ -1,12 +1,12 @@
 var outputHTML = ""
 
-function onSearch() {
+// function onSearch() {
 
-    var  city
+//     var  city
     
-    city = document.getElementById("input").value
+//     city = document.getElementById("input").value
     
-
+var city = prompt()
     var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0bd0cd1e7d8ab7a578a5a4d28a57d45b`
 
 fetch (url)
@@ -18,38 +18,16 @@ return reponse.json()
 
 .then(function(data){
 
-console.log(data)
-    outputHTML += "<table class = 'table table-dark table-striped' >"
-    outputHTML += "<th>Id</th>"
-    outputHTML += "<th>City</th>"
-  outputHTML += "<th>Weather</th>"
-  outputHTML += "<th>Wind-Speed </th>"  
-  
-    
-// for (var i = 0; i < data.length; i++) {
+console.log(data),
    
-    outputHTML += "<tr>";
-
-     outputHTML += "<td>" + data.id +"</td>" ;
-
-    outputHTML += "<td>" + "  "+data.name +"</td>" ;
   
-    outputHTML += "<td>" + data.weather[0].description  +"</td>" ;
-
-    outputHTML += "<td>" + data.wind.speed +"</td>" ;
     
-  
-
-
-    outputHTML += "<tr>";
-
+document.getElementById('name').textContent = data.name,
+document.getElementById('wind').textContent = data.wind.speed,
+document.getElementById('weather').textContent = data.weather[0].description,
+document.getElementById('idCtiy').textContent = data.id
+document.getElementById('iconM').src = "http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
    
+  
 
-    
-// }
-outputHTML += "</table>"
-
-document.getElementById("divT").innerHTML = outputHTML
 })
-
-}

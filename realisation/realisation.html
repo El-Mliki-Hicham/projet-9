@@ -10,23 +10,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="input-group mb-3 col-6">
-        <input id="input" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Button</button>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-sm-12 col-xs-12">
+                <div class="card p-4">
+                    <div class="d-flex">
+                        <h6 id="name" class="flex-grow-1"></h6>
+                        <h6>16:08</h6>
+                    </div>
+                    <div class="d-flex flex-column temp mt-5 mb-3">
+                        <h1 class="mb-0 font-weight-bold" id="heading"> 13° C </h1> <span class="small grey">Stormy</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="temp-details flex-grow-1">
+                            <div class="my-1 mb"><p id="wind" ></p> <img class="iconW" src="wind.png" height="17px"></div>                            <p  id="idCity" class="my-1"> <i class="fa fa-tint mr-2" aria-hidden="true"></i> <span >  </span> </p>
+                            <div class="my-1 mb"><p id="weather" ></p> <img class="iconW" src="summe.png" height="17px"></div>                            <p  id="idCity" class="my-1"> <i class="fa fa-tint mr-2" aria-hidden="true"></i> <span >  </span> </p>
+                        </div>
+                        
+                        <img src="http://openweathermap.org/img/w/" id="iconM" width="100px">
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-<!-- 
-    <input type="text" id="input">
-    <button onclick="onSearch()" >search</button>
-     -->
+    </div>
 
-
-
-    <div id="divT" class="container"></div>
-    
-   
    <script src="realisation.js"></script>
 </body>
-</html>
+</html> 
