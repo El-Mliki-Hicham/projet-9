@@ -1,12 +1,9 @@
+
+
+
 var outputHTML = ""
-
-
-// document.getElementById("btnShow").addEventListener("click", function() {
-//     var formN = document.getElementById('formN')
-//     formN.classList.toggle("d-none")
-// })
 function onSearch() {
-
+ 
     var  city
     
     city = document.getElementById("input").value
